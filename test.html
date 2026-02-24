@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.AppleSystemUIFontMonospaced'; color: #0e0e0e}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.AppleSystemUIFontMonospaced'; color: #0e0e0e; min-height: 17.0px}
+  </style>
+</head>
+<body>
+<p class="p1">import Link from "next/link";</p>
+<p class="p2"><br></p>
+<p class="p1">const Stat = ({ label, value }: { label: string; value: string }) =&gt; (</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div className="rounded-2xl border border-white/10 bg-white/5 p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="text-sm text-white/70"&gt;{label}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="mt-1 text-2xl font-semibold text-white"&gt;{value}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">);</p>
+<p class="p2"><br></p>
+<p class="p1">const Pill = ({ children }: { children: React.ReactNode }) =&gt; (</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{children}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/span&gt;</p>
+<p class="p1">);</p>
+<p class="p2"><br></p>
+<p class="p1">const Card = ({</p>
+<p class="p1"><span class="Apple-converted-space">  </span>title,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>desc,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>href,</p>
+<p class="p1">}: {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>title: string;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>desc: string;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>href: string;</p>
+<p class="p1">}) =&gt; (</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;Link</p>
+<p class="p1"><span class="Apple-converted-space">    </span>href={href}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>className="group rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="text-lg font-semibold text-white"&gt;{title}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="mt-2 text-sm text-white/70"&gt;{desc}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="mt-4 text-sm text-white/80 group-hover:text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Keşfet →</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/Link&gt;</p>
+<p class="p1">);</p>
+<p class="p2"><br></p>
+<p class="p1">export default function Home() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return (</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div className="min-h-screen bg-[#070A12] text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Top bar */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;header className="sticky top-0 z-50 border-b border-white/10 bg-[#070A12]/80 backdrop-blur"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="h-9 w-9 rounded-2xl bg-white/10" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div className="text-sm font-semibold"&gt;MadridBet&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div className="text-xs text-white/60"&gt;Modern Bahis Deneyimi&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="ml-auto hidden w-[420px] items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 md:flex"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="h-2 w-2 rounded-full bg-white/40" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input</p>
+<p class="p1"><span class="Apple-converted-space">              </span>className="w-full bg-transparent text-sm outline-none placeholder:text-white/40"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>placeholder="Oyun, takım, lig, turnuva ara…"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="ml-auto flex items-center gap-2 md:ml-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link</p>
+<p class="p1"><span class="Apple-converted-space">              </span>href="/auth/login"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Giriş</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link</p>
+<p class="p1"><span class="Apple-converted-space">              </span>href="/auth/register"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>className="rounded-2xl bg-white px-4 py-2 text-sm font-semibold text-black hover:opacity-90"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Kayıt Ol</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{/* Nav */}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav className="mx-auto max-w-6xl px-4 pb-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Pill&gt;Canlı&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/sports" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;Spor&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/casino" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;Casino&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/live-casino" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;Canlı Casino&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/promotions" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;Promosyonlar&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/vip" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;VIP&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;Link href="/help" className="hover:opacity-90"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Pill&gt;Yardım&lt;/Pill&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>{/* Hero */}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;main className="mx-auto max-w-6xl px-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section className="grid gap-8 py-10 md:grid-cols-2 md:items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span className="h-2 w-2 rounded-full bg-white/60" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Hızlı • Temiz • Mobil uyumlu</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Daha net. Daha hızlı.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span className="block text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Bahis &amp; casino deneyimi.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p className="mt-4 text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Ana kategoriler, hızlı arama ve sade promosyon akışı ile “kalabalık</p>
+<p class="p1"><span class="Apple-converted-space">              </span>site” hissini bitiren yeni arayüz.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="mt-6 flex gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Link</p>
+<p class="p1"><span class="Apple-converted-space">                </span>href="/auth/register"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>className="rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-black hover:opacity-90"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Hemen Başla</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Link</p>
+<p class="p1"><span class="Apple-converted-space">                </span>href="/promotions"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-sm hover:bg-white/10"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Promosyonlara Bak</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="mt-8 grid grid-cols-3 gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Stat label="Aktif Turnuva" value="6" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Stat label="Jackpot" value="₺ 815M+" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Stat label="Canlı Maç" value="120+" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="text-sm text-white/70"&gt;Bugün Öne Çıkanlar&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="mt-4 grid gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div className="rounded-2xl border border-white/10 bg-black/20 p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="text-sm font-semibold"&gt;Canlı Maçlar&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="mt-1 text-sm text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>En çok oynanan 10 karşılaşma + hızlı kupon.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div className="rounded-2xl border border-white/10 bg-black/20 p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="text-sm font-semibold"&gt;Popüler Slotlar&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="mt-1 text-sm text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Haftanın trend slotları, tek ekranda.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div className="rounded-2xl border border-white/10 bg-black/20 p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="text-sm font-semibold"&gt;Promosyon Akışı&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="mt-1 text-sm text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Bonus/turnuva detayları daha okunur.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{/* Quick routes */}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section className="grid gap-4 pb-10 md:grid-cols-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;Card</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title="Spor Bahisleri"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>desc="Lig/maç filtreleri, canlı skor ve hızlı kupon."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>href="/sports"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;Card</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title="Casino"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>desc="Provider filtreleri, popüler oyunlar, yeni eklenenler."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>href="/casino"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;Card</p>
+<p class="p1"><span class="Apple-converted-space">            </span>title="Canlı Casino"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>desc="Rulet, blackjack, baccarat; masalara hızlı erişim."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>href="/live-casino"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{/* Footer */}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer className="border-t border-white/10 py-10 text-sm text-white/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;© {new Date().getFullYear()} MadridBet — UI Redesign Demo&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div className="flex gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Link className="hover:text-white" href="/content/privacy"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Gizlilik</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Link className="hover:text-white" href="/content/terms"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Kurallar</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;Link className="hover:text-white" href="/help"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Destek</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/Link&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-white/70"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>18+ • Sorumlu oyun uyarısı burada sade biçimde gösterilir.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>);</p>
+<p class="p1">}</p>
+</body>
+</html>
